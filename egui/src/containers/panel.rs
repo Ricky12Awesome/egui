@@ -279,7 +279,7 @@ impl SidePanel {
         ctx: &CtxRef,
         add_contents: Box<dyn FnOnce(&mut Ui) -> R + 'c>,
     ) -> InnerResponse<R> {
-        let layer_id = LayerId::background();
+        let layer_id = LayerId::debug();
         let side = self.side;
         let available_rect = ctx.available_rect();
         let clip_rect = ctx.input().screen_rect();
